@@ -1,0 +1,38 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  host: db
+  username: postgres
+  password: postgres
+
+development:
+  <<: *default
+  database: mcu_core_development
+
+test:
+  <<: *default
+  database: mcu_core_test
+
+production:
+  <<: *default
+  database: mcu_core_production
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  host: db
+  username: postgres
+  password: postgres
+
+development:
+  <<: *default
+  database: mcu_core_development
+
+test:
+  <<: *default
+  database: mcu_core_test
+
+production:
+  <<: *default
+  database: mcu_core_production
