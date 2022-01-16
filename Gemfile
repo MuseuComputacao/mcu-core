@@ -21,6 +21,10 @@ gem 'puma', '~> 5.0'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
+# Authentication
+gem 'active_model_serializers', '~> 0.10.10'
+gem 'devise_token_auth', '~> 1.2'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 
@@ -38,6 +42,8 @@ group :development, :test do
 end
 
 group :development do
+  # See emails on development mode
+  gem 'letter_opener_web', '~> 2.0'
   gem 'listen', '~> 3.3'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
