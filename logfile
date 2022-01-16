@@ -1,0 +1,30 @@
+2022-01-16 10:18:40.477 -03 [29759] LOG:  starting PostgreSQL 12.1 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0, 64-bit
+2022-01-16 10:18:40.478 -03 [29759] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2022-01-16 10:18:40.478 -03 [29759] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2022-01-16 10:18:40.479 -03 [29759] WARNING:  could not create listen socket for "localhost"
+2022-01-16 10:18:40.479 -03 [29759] FATAL:  could not create any TCP/IP sockets
+2022-01-16 10:18:40.479 -03 [29759] LOG:  database system is shut down
+2022-01-16 10:19:11.443 -03 [29820] LOG:  starting PostgreSQL 12.1 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0, 64-bit
+2022-01-16 10:19:11.445 -03 [29820] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2022-01-16 10:19:11.448 -03 [29820] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2022-01-16 10:19:11.486 -03 [29821] LOG:  database system was shut down at 2022-01-16 10:17:42 -03
+2022-01-16 10:19:11.493 -03 [29820] LOG:  database system is ready to accept connections
+2022-01-16 10:29:20.919 -03 [36553] LOG:  starting PostgreSQL 12.1 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0, 64-bit
+2022-01-16 10:29:20.920 -03 [36553] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2022-01-16 10:29:20.923 -03 [36553] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2022-01-16 10:29:20.967 -03 [36554] LOG:  database system was interrupted; last known up at 2022-01-16 10:23:50 -03
+2022-01-16 10:29:21.102 -03 [36554] LOG:  database system was not properly shut down; automatic recovery in progress
+2022-01-16 10:29:21.104 -03 [36554] LOG:  redo starts at 0/15D2390
+2022-01-16 10:29:21.104 -03 [36554] LOG:  invalid record length at 0/15D24C0: wanted 24, got 0
+2022-01-16 10:29:21.104 -03 [36554] LOG:  redo done at 0/15D2488
+2022-01-16 10:29:21.114 -03 [36553] LOG:  database system is ready to accept connections
+2022-01-16 10:44:21.993 -03 [36559] LOG:  could not open temporary statistics file "pg_stat_tmp/global.tmp": No such file or directory
+2022-01-16 10:44:22.025 -03 [36553] LOG:  could not open file "postmaster.pid": No such file or directory
+2022-01-16 10:44:22.025 -03 [36553] LOG:  performing immediate shutdown because data directory lock file is invalid
+2022-01-16 10:44:22.025 -03 [36553] LOG:  received immediate shutdown request
+2022-01-16 10:44:22.025 -03 [36553] LOG:  could not open file "postmaster.pid": No such file or directory
+2022-01-16 10:44:22.025 -03 [36558] WARNING:  terminating connection because of crash of another server process
+2022-01-16 10:44:22.025 -03 [36558] DETAIL:  The postmaster has commanded this server process to roll back the current transaction and exit, because another server process exited abnormally and possibly corrupted shared memory.
+2022-01-16 10:44:22.025 -03 [36558] HINT:  In a moment you should be able to reconnect to the database and repeat your command.
+2022-01-16 10:44:22.025 -03 [36559] LOG:  could not open temporary statistics file "pg_stat/global.tmp": No such file or directory
+2022-01-16 10:44:22.030 -03 [36553] LOG:  database system is shut down
