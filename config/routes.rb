@@ -10,6 +10,8 @@ Rails.application.routes.draw do
     scope module: :v1,
           constraints: ApiConstraints.new(version: 1, default: true) do
       get "roles", to: 'roles#index'
+      get "users", to: 'user#index'
+      delete "users", to: 'user#destroy'
     end
   end
 end
