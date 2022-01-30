@@ -11,12 +11,13 @@ class User < ActiveRecord::Base
          :trackable,
          :confirmable
 
-  enum role: { 
-    master: 'master', 
+  enum role: {
+    master: 'master',
     cataloger: 'cataloger',
-    editor: 'editor', 
+    editor: 'editor',
     curator: 'curator'
   }
+  validates_presence_of :role
 
   include DeviseTokenAuth::Concerns::User
 end
