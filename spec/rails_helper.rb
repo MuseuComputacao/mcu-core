@@ -81,4 +81,7 @@ RSpec.configure do |config|
       with.library :rails
     end
   end
+
+   #  helper to enable more simple access to json requests
+  config.include Request::JsonHelpers, type: :request
 end
