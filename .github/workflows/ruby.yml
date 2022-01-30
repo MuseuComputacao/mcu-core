@@ -41,7 +41,9 @@ jobs:
           bundle install --jobs 4 --retry 3
 
       - name: Run Linter
-        run: bundle install rubocop && rubocop
+        run: |
+          bundle install rubocop 
+          bundle exec rubocop
       
       - name: Run Tests
         env:
