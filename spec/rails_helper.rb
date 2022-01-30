@@ -1,3 +1,14 @@
+# SimpleCov shows the code coverage of our tests 
+require 'simplecov'
+SimpleCov.start do
+  add_group 'Config', 'config'
+  add_group 'Controllers', 'app/controllers'
+  add_group 'Libs', 'lib'
+  add_group 'Models', 'app/models'
+  add_group 'Serializers', 'app/serializers'
+  add_group 'Specs', 'spec'
+end
+
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 require 'spec_helper'
 ENV['RAILS_ENV'] ||= 'test'
@@ -20,7 +31,7 @@ require 'rspec/rails'
 # directory. Alternatively, in the individual `*_spec.rb` files, manually
 # require only the support files necessary.
 #
-# Dir[Rails.root.join('spec', 'support', '**', '*.rb')].sort.each { |f| require f }
+Dir[Rails.root.join('spec', 'support', '**', '*.rb')].sort.each { |f| require f }
 
 # Checks for pending migrations and applies them before tests are run.
 # If you are not using ActiveRecord, you can remove these lines.
@@ -61,4 +72,13 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
+
+
+  # shoulda matchers helper for generete single line tests 
+  Shoulda::Matchers.configure do |config|
+    config.integrate do |with|
+      with.test_framework :rspec
+      with.library :rails
+    end
+  end
 end
