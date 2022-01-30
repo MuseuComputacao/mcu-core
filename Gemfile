@@ -37,6 +37,7 @@ group :development, :test do
   # linter for batter used
   gem 'rubocop', '~> 1.24', '>= 1.24.1'
   gem 'rubocop-rspec', '~> 2.7'
+  gem 'rspec-rails', '~> 5.0.0'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
 end
