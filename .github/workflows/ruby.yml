@@ -39,11 +39,6 @@ jobs:
         run: |
           sudo apt-get update && sudo apt-get -yqq install libpq-dev build-essential libcurl4-openssl-dev
           bundle install --jobs 4 --retry 3
-
-      - name: Run Linter
-        run: |
-          bundle install rubocop 
-          bundle exec rubocop
       
       - name: Run Tests
         env:
