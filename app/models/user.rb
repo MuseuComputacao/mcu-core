@@ -17,6 +17,7 @@ class User < ActiveRecord::Base
     editor: 'editor', 
     curator: 'curator'
   }
-
+  validates_presence_of :role
+  
   include DeviseTokenAuth::Concerns::User
 end
