@@ -1,7 +1,8 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
-# rubocop:disable Metrics/BlockLength
-RSpec.describe 'Registrations', type: :request do
+RSpec.describe 'Registrations', type: :request do # rubocop:disable Metrics/BlockLength
   let(:user) { create :user }
   let(:valid_attributes) { attributes_for :user }
 

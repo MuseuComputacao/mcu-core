@@ -1,4 +1,6 @@
-# SimpleCov shows the code coverage of our tests 
+# frozen_string_literal: true
+
+# SimpleCov shows the code coverage of our tests
 require 'simplecov'
 SimpleCov.start do
   add_group 'Config', 'config'
@@ -14,7 +16,7 @@ require 'spec_helper'
 ENV['RAILS_ENV'] ||= 'test'
 require_relative '../config/environment'
 # Prevent database truncation if the environment is production
-abort("The Rails environment is running in production mode!") if Rails.env.production?
+abort('The Rails environment is running in production mode!') if Rails.env.production?
 require 'rspec/rails'
 # Add additional requires below this line. Rails is not loaded until this point!
 
@@ -73,15 +75,14 @@ RSpec.configure do |config|
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
 
-
-  # shoulda matchers helper for generete single line tests 
-  Shoulda::Matchers.configure do |config|
+  # shoulda matchers helper for generete single line tests
+  Shoulda::Matchers.configure do |config| # rubocop:disable Lint/ShadowingOuterLocalVariable
     config.integrate do |with|
       with.test_framework :rspec
       with.library :rails
     end
   end
 
-   #  helper to enable more simple access to json requests
+  #  helper to enable more simple access to json requests
   config.include Request::JsonHelpers, type: :request
 end

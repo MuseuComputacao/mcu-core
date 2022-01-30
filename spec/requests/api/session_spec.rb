@@ -1,7 +1,8 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
-# rubocop:disable Metrics/BlockLength
-RSpec.describe 'Session', type: :request do
+RSpec.describe 'Session', type: :request do # rubocop:disable Metrics/BlockLength
   let(:user) { create :confirmed_user }
   let(:valid_headers) { user.create_new_auth_token }
 

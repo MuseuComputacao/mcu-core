@@ -35,19 +35,19 @@ group :development, :test do
   # color terminal variables
   gem 'pry'
   # linter for batter used
+  gem 'factory_bot_rails', '~> 6.1'
+  gem 'faker', '~> 2.17'
+  gem 'rspec-rails', '~> 5.0'
   gem 'rubocop', '~> 1.24', '>= 1.24.1'
   gem 'rubocop-rspec', '~> 2.7'
-  gem "factory_bot_rails", "~> 6.1"
-  gem "faker", "~> 2.17"
-  gem "rspec-rails", "~> 5.0"
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
 end
 
 group :test do
-  gem "database_cleaner-active_record", "~> 2.0"
-  gem "shoulda-matchers", "~> 5.0"
-  gem "simplecov", "~> 0.21.2", require: false
+  gem 'database_cleaner-active_record', '~> 2.0'
+  gem 'shoulda-matchers', '~> 5.0'
+  gem 'simplecov', '~> 0.21.2', require: false
 end
 
 group :development do
