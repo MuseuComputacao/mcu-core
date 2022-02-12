@@ -58,10 +58,15 @@ More indo on [Rails Guide Command line](https://guides.rubyonrails.org/command_l
 
 ## Tests
 
-This project uses the [default lib for tests on rails](https://guides.rubyonrails.org/testing.html), that you can find on the tests folder. Access the rails console and run by:
+It's never too early to begin running unit tests. Tests are run using [RSpec](https://github.com/rspec/rspec-rails) testing framework and lives in the /spec folder. To run the tests:
 
-```bash
-rails test
+```
+docker-compose run --rm app rake
+```
+or into sh 
+
+```
+rake
 ```
 
 ## Linter
