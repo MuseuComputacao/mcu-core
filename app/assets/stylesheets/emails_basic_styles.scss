@@ -1,0 +1,51 @@
+@import "foundation-emails-settings";
+
+@mixin emails_basic_styles($header-color, $font-color-strong, $font-color-light, $font-color-secundary, $footer-color, $button-color, $body-background) {
+  .container {
+    border-radius: 5px;
+  }
+
+  .custom-body {
+    background-color: $body-background;
+    color: #1c1c1c;
+    font-family: "Roboto", "Helvetica", "Arial", "sans-serif";
+    border-radius: 5px;
+  } 
+
+  .header {
+    background-color: $header-color;
+    padding: 2%;
+    border-radius: 5px 5px 0 0;
+  }
+
+  .subheader {
+    font-size: 25px;
+    font-weight: 700;
+    padding-top: 3%;
+  }
+
+  .footer {
+    padding: 2%;
+    border-radius: 0 0 5px 5px;
+    background-color: $footer-color;
+  }
+
+  .logo {
+    max-width: 150px;
+  }
+
+  .text-color {
+    color: $font-color-light;
+  }
+
+  .button {
+    padding: 10px 20px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 14px;
+    width: 300px;
+    border-radius: 25px;
+    color: white;
+    background-color: $button-color;
+  }
+}

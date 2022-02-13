@@ -1,0 +1,9 @@
+@import "./emails_basic_styles.scss";
+$header-color: #18121E;
+$font-color-strong: #464855;
+$font-color-light: #98A3AD; 
+$font-color-secundary: #AD4A4A;
+$footer-color: #F8F8F8;
+$button-color: #AD4A4A;
+$body-background: #f5f5f5;
+@include emails_basic_styles($header-color, $font-color-strong, $font-color-light, $font-color-secundary, $footer-color, $button-color, $body-background);

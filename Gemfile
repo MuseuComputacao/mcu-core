@@ -31,6 +31,15 @@ gem 'bootsnap', '>= 1.4.4', require: false
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
 
+# Preprocessor for email HTML to convert components in table structure https://get.foundation/emails/docs/inky.html#how-to-inky
+gem 'inky-rb', require: 'inky'
+# Stylesheet inlining for email (used by inky) https://github.com/fphilipe/premailer-rails
+gem 'premailer-rails'
+# Sprockets is a Ruby library for compiling and serving web assets. https://github.com/rails/sprockets
+gem 'sprockets'
+# This gem integrates the C implementation of Sass, LibSass, into the asset pipeline. https://github.com/sass/sassc-rails
+gem 'sassc-rails'
+
 group :development, :test do
   # color terminal variables
   gem 'pry'

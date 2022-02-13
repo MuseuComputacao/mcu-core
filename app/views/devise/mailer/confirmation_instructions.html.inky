@@ -1,0 +1,15 @@
+<spacer size="50"></spacer>
+<row>
+  <columns>
+    <center>
+        <p> <strong>Olá, </strong> <%= @email %>!</p>
+        <p> Seja bem vindo ao time do Museu da Computação da UFRJ. </p>
+        <p>Por favor confirme sua conta clicando no link a baixo</p>
+        <spacer size="5"></spacer>
+        <p><%= link_to 'Confirmar minha conta', confirmation_url(@resource, confirmation_token: @token), class: "button" %><p>
+        <spacer size="20"></spacer>
+        <p> ❤️ 🤖 ❤️ </p>
+    </center>
+  </columns>
+</row>
+<spacer size="20"></spacer>
