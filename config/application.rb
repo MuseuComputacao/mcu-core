@@ -27,7 +27,7 @@ module McuCore
     config.load_defaults 6.1
 
     # Email configuraration Layout
-    config.assets.precompile += %w( foundation_mails.css mcu_style.css)
+    config.assets.precompile += %w[foundation_mails.css mcu_style.css]
     config.i18n.default_locale = :'pt-BR'
 
     # Configuration for the application, engines, and railties goes here.

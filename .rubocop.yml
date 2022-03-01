@@ -3,6 +3,8 @@ AllCops:
 
   Exclude:
     - './config/initializers/devise.rb'
+    - './db/schema.rb'
+    - './db/migrate/*'
 
 Gemspec/DateAssignment: # new in 1.10
   Enabled: true

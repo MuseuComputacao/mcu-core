@@ -12,6 +12,8 @@ Rails.application.routes.draw do
       get 'roles', to: 'roles#index'
       get 'users', to: 'user#index'
       delete 'users', to: 'user#destroy'
+      post 'item', to: 'items#create'
+      get 'items', to: 'items#index'
     end
   end
 end
