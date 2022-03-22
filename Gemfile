@@ -29,7 +29,7 @@ gem 'devise_token_auth', '~> 1.2'
 gem 'bootsnap', '>= 1.4.4', require: false
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
-# gem 'rack-cors'
+gem 'rack-cors'
 
 # Preprocessor for email HTML to convert components in table structure https://get.foundation/emails/docs/inky.html#how-to-inky
 gem 'inky-rb', require: 'inky'
