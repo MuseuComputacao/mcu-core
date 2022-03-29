@@ -69,6 +69,13 @@ or into sh
 rake
 ```
 
+You too can run just one spec file into sh
+
+```
+rspec spec/{file_path}
+
+```
+
 ## Linter
 
 This project uses the [rubocop gem](https://guides.rubyonrails.org/testing.html) for linter, that config you can find on `.rubocop.yml`. Access the docker console and run by:

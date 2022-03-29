@@ -1,6 +1,9 @@
 # frozen_string_literal: true
 
 class User < ActiveRecord::Base
+  include Sortable
+  include DeviseTokenAuth::Concerns::User
+
   # Include default devise modules. Others available are:
   # :lockable, :timeoutable, and :omniauthable
   devise :database_authenticatable,
@@ -19,5 +22,9 @@ class User < ActiveRecord::Base
   }
   validates_presence_of :role
 
-  include DeviseTokenAuth::Concerns::User
+  def self.sort_by
+    %w[name role]
+  end
+
+  private_class_method :sort_by
 end

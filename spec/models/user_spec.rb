@@ -8,4 +8,11 @@ RSpec.describe User, type: :model do
     it { should validate_presence_of(:role) }
     it { should validate_length_of(:password).is_at_least(8) }
   end
+
+  describe 'concerns' do
+    it '.sorted' do
+      expect(User.order('name desc').to_sql).to eq User.sorted('body', 'desc').to_sql
+      expect(User.order('name asc').to_sql).to eq User.sorted('x', 'x').to_sql
+    end
+  end
 end

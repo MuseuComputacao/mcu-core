@@ -39,6 +39,8 @@ gem 'premailer-rails'
 gem 'sprockets'
 # This gem integrates the C implementation of Sass, LibSass, into the asset pipeline. https://github.com/sass/sassc-rails
 gem 'sassc-rails'
+# Handle pagination https://github.com/kaminari/kaminari
+gem 'kaminari', '~> 1.2'
 
 group :development, :test do
   # color terminal variables
