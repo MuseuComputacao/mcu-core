@@ -11,8 +11,8 @@ RSpec.describe User, type: :model do
 
   describe 'concerns' do
     it '.sorted' do
-      expect(User.order('name desc').to_sql).to eq User.sorted('body', 'desc').to_sql
-      expect(User.order('name asc').to_sql).to eq User.sorted('x', 'x').to_sql
+      expect(User.order('name desc').to_sql).to eq User.sorted('name', 'desc').to_sql
+      expect(User.order('name asc').to_sql).to eq User.sorted('name', 'asc').to_sql
     end
   end
 end

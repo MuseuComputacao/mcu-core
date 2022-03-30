@@ -3,6 +3,8 @@
 module Api
   module V1
     class ItemsController < ApplicationController
+      include Paginable
+
       before_action :authenticate_api_user!
 
       # rubocop:disable Metrics/AbcSize
@@ -27,7 +29,10 @@ module Api
       # rubocop:enable Metrics/AbcSize
 
       def index
-        render(json: Item.all, status: 200)
+        @items = Item.sorted(params[:sort], params[:dir])
+                     .page(current_page)
+                     .per(per_page)
+        render json: @items, meta: meta_attributes(@items), adapter: :json
       end
 
       def allowed_params # rubocop:disable  Metrics/MethodLength
