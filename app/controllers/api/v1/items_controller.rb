@@ -28,6 +28,11 @@ module Api
       end
       # rubocop:enable Metrics/AbcSize
 
+      def show
+        @item = Item.find(params[:id])
+        render json: @item
+      end
+
       def index
         @items = Item.sorted(params[:sort], params[:dir])
                      .page(current_page)

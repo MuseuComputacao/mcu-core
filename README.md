@@ -39,7 +39,9 @@ The application will become available at the URL:
 http://localhost:3001/
 ```
 
-1 - To install new gems add on Gemfile and then tun `docker-compose build`
+1 - To install new gems add on Gemfile and then run `docker-compose build`
+
+2 - To seed your db for get the first user created run `docker-compose run --rm app rails db:seed`
 
 ## Rails Console
 
@@ -50,7 +52,7 @@ docker-compose run --rm app sh
 ```
 
 ```bash 
-pry
+rails c
 ``` 
 
 More indo on [Rails Guide Command line](https://guides.rubyonrails.org/command_line.html) and [pry doc](http://pry.github.io)
