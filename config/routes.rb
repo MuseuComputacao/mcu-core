@@ -12,9 +12,11 @@ Rails.application.routes.draw do
       get 'roles', to: 'roles#index'
       get 'users', to: 'user#index'
       delete 'users', to: 'user#destroy'
+      get 'items', to: 'items#index'
+      get 'items/status', to: 'items#items_status'
       post 'item', to: 'items#create'
       get 'item', to: 'items#show'
-      get 'items', to: 'items#index'
+      put 'item/:id', to: 'items#update'
     end
   end
 end
