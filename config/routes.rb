@@ -15,7 +15,7 @@ Rails.application.routes.draw do
       get 'items', to: 'items#index'
       get 'items/status', to: 'items#items_status'
       post 'item', to: 'items#create'
-      get 'item', to: 'items#show'
+      get 'item/:id', to: 'items#show'
       put 'item/:id', to: 'items#update'
     end
   end
