@@ -26,7 +26,6 @@ Table of contents
 $ docker-compose up
 ```
 
-> You need to add one `.env` use the `.env.example` as reference 
 ## Usage
 
 ```bash
@@ -36,7 +35,7 @@ $ docker-compose up
 The application will become available at the URL:
 
 ```
-http://localhost:3001/
+http://localhost:3000/
 ```
 
 1 - To install new gems add on Gemfile and then run `docker-compose build`

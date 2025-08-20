@@ -2,12 +2,12 @@ FROM ruby:2.7.5-alpine
 
 RUN apk update && apk add bash build-base nodejs postgresql-dev tzdata
 
-RUN mkdir /home/app \ 
-&& chown $(id -un):$(id -gn) /home/app
+RUN mkdir /home/app \
+    && chown $(id -un):$(id -gn) /home/app
 WORKDIR /home/app
 
 COPY Gemfile Gemfile.lock ./
-RUN gem install bundler --no-document
+RUN gem install bundler -v 2.4.22 --no-document
 RUN bundle install --no-binstubs --jobs $(nproc) --retry 3
 
 COPY . ./
