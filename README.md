@@ -40,8 +40,7 @@ http://localhost:3000/
 
 1 - To install new gems add on Gemfile and then run `docker-compose build`
 
-2 - To seed your db for get the first user created run `docker-compose run --rm app rails db:seed`
-
+2- The user Master will be found on `db/seed.rb`
 ## Rails Console
 
 To access rails console run.
