@@ -1,0 +1,99 @@
+
+Api::V1::ItemsController
+  is expected to have :authenticate_api_user! as a before_action
+
+Api::V1::UserController
+  is expected to have :authenticate_api_user! as a before_action
+
+Item
+  validations
+    is expected to validate that :name cannot be empty/falsy
+    is expected to validate that :status cannot be empty/falsy
+    is expected to validate that :register_number cannot be empty/falsy
+  concerns
+    .sorted
+
+User
+  validations
+    is expected to validate that :email cannot be empty/falsy
+    is expected to validate that :role cannot be empty/falsy
+    is expected to validate that the length of :password is at least 8
+  concerns
+    .sorted
+
+Confirmations
+  POST /create
+    re-sends confirmation
+
+Passwords
+  POST /create
+    resets password
+  PUT /update
+    updates password
+
+Registrations
+  POST /create
+    creates a new User
+  PUT /update
+    updates the user
+  DELETE /destroy
+    destroys the user
+
+Session
+  sign in
+    with valid parameters
+      should respond with success
+    with invalid parameters
+      should respond with unauthorized
+  sign out
+    should respond with success
+
+Token Validations
+  signed in
+    should respond with success
+  signed out
+    should respond with unauthorized
+
+/item
+  GET /index
+    renders a successful response
+  POST /create
+    with valid parameters
+      creates a new Item
+      renders a JSON response with the new item
+    with invalid parameters
+      does not create a new Item
+      renders a JSON response with errors for the new item
+    with user not logged in
+      does not create a new Item
+      renders a JSON response with errors for the new item
+
+DeviseTokenAuth::ConfirmationsController
+  is expected to route POST /api/auth/confirmation to/from {:action=>"create", :format=>:json, :controller=>"devise_token_auth/confirmations"}
+
+DeviseTokenAuth::PasswordsController
+  is expected to route POST /api/auth/password to/from {:action=>"create", :format=>:json, :controller=>"devise_token_auth/passwords"}
+  is expected to route PUT /api/auth/password to/from {:action=>"update", :format=>:json, :controller=>"devise_token_auth/passwords"}
+
+DeviseTokenAuth::RegistrationsController
+  is expected to route POST /api/auth to/from {:action=>"create", :format=>:json, :controller=>"devise_token_auth/registrations"}
+  is expected to route PUT /api/auth to/from {:action=>"update", :format=>:json, :controller=>"devise_token_auth/registrations"}
+  is expected to route DELETE /api/auth to/from {:action=>"destroy", :format=>:json, :controller=>"devise_token_auth/registrations"}
+
+DeviseTokenAuth::SessionsController
+  is expected to route POST /api/auth/sign_in to/from {:action=>"create", :format=>:json, :controller=>"devise_token_auth/sessions"}
+  is expected to route DELETE /api/auth/sign_out to/from {:action=>"destroy", :format=>:json, :controller=>"devise_token_auth/sessions"}
+
+DeviseTokenAuth::TokenValidationsController
+  is expected to route GET /api/auth/validate_token to/from {:action=>"validate_token", :controller=>"devise_token_auth/token_validations"}
+
+Api::V1::ItemsController
+  routing
+    is expected to route GET /api/items to/from {:action=>"index", :format=>:json, :controller=>"api/v1/items"}
+    is expected to route POST /api/item to/from {:action=>"create", :format=>:json, :controller=>"api/v1/items"}
+    is expected to route PUT /api/item/1 to/from {:action=>"update", :format=>:json, :id=>"1", :controller=>"api/v1/items"}
+
+Finished in 1.13 seconds (files took 4.09 seconds to load)
+40 examples, 0 failures
+
+Coverage report generated for RSpec to /home/app/coverage. 379 / 404 LOC (93.81%) covered.
