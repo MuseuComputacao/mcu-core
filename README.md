@@ -23,7 +23,7 @@ Table of contents
 + Clone the repo and cd into it
 
 ``` bash
-$ docker-compose up
+$ docker compose up
 ```
 
 ## Usage
@@ -49,9 +49,9 @@ To access rails console run.
 docker-compose run --rm app sh
 ```
 
-```bash 
+```bash
 rails c
-``` 
+```
 
 More indo on [Rails Guide Command line](https://guides.rubyonrails.org/command_line.html) and [pry doc](http://pry.github.io)
 
@@ -63,7 +63,7 @@ It's never too early to begin running unit tests. Tests are run using [RSpec](ht
 ```
 docker-compose run --rm app rake
 ```
-or into sh 
+or into sh
 
 ```
 rake
@@ -81,26 +81,26 @@ rspec spec/{file_path}
 This project uses the [rubocop gem](https://guides.rubyonrails.org/testing.html) for linter, that config you can find on `.rubocop.yml`. Access the docker console and run by:
 
 ```bash
-bundle exec rubocop 
+bundle exec rubocop
 ```
 
-> Use `-a` to autofix safe mode  and `-A` hardmode 
+> Use `-a` to autofix safe mode  and `-A` hardmode
 
-## Troubleshooting 
+## Troubleshooting
 
 #### Access Forbidden  for edit files create by rails c
 
-On ubuntu: 
+On ubuntu:
 
-inside de project folder run: 
+inside de project folder run:
 
-```bash 
+```bash
 sudo chown your-user:your-user -R ./
 ```
 
 #### rails server error `initialize': getaddrinfo: Name or service not known (SocketError)
 
-On Ubuntu: 
+On Ubuntu:
 
 On `/etc/host` add `127.0.0.1  localhost`
 
