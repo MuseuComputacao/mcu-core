@@ -1,0 +1,717 @@
+Download ruby-advisory-db ...
+ruby-advisory-db:
+  advisories:	1058 advisories
+  last updated:	2026-02-14 16:57:54 -0800
+  commit:	ceb15641ac50e71ba95015aff0d4bf9c52525c27
+Name: actionmailer
+Version: 6.1.4.4
+CVE: CVE-2024-47889
+GHSA: GHSA-h47h-mwp9-c6q6
+Criticality: Unknown
+URL: https://github.com/rails/rails/security/advisories/GHSA-h47h-mwp9-c6q6
+Title: Possible ReDoS vulnerability in block_format in Action Mailer
+Solution: update to '~> 6.1.7.9', '~> 7.0.8, >= 7.0.8.5', '~> 7.1.4, >= 7.1.4.1', '>= 7.2.1.1'
+
+Name: actionpack
+Version: 6.1.4.4
+CVE: CVE-2023-22792
+GHSA: GHSA-p84v-45xj-wwqj
+Criticality: Unknown
+URL: https://github.com/rails/rails/releases/tag/v7.0.4.1
+Title: ReDoS based DoS vulnerability in Action Dispatch
+Solution: update to '~> 5.2.8', '~> 6.1.7, >= 6.1.7.1', '>= 7.0.4.1'
+
+Name: actionpack
+Version: 6.1.4.4
+CVE: CVE-2024-54133
+GHSA: GHSA-vfm5-rmrh-j26v
+Criticality: Unknown
+URL: https://github.com/rails/rails/security/advisories/GHSA-vfm5-rmrh-j26v
+Title: Possible Content Security Policy bypass in Action Dispatch
+Solution: update to '~> 7.0.8, >= 7.0.8.7', '~> 7.1.5, >= 7.1.5.1', '~> 7.2.2, >= 7.2.2.1', '>= 8.0.0.1'
+
+Name: actionpack
+Version: 6.1.4.4
+CVE: CVE-2024-47887
+GHSA: GHSA-vfg9-r3fq-jvx4
+Criticality: Unknown
+URL: https://github.com/rails/rails/security/advisories/GHSA-vfg9-r3fq-jvx4
+Title: Possible ReDoS vulnerability in HTTP Token authentication in Action Controller
+Solution: update to '~> 6.1.7.9', '~> 7.0.8, >= 7.0.8.5', '~> 7.1.4, >= 7.1.4.1', '>= 7.2.1.1'
+
+Name: actionpack
+Version: 6.1.4.4
+CVE: CVE-2022-23633
+GHSA: GHSA-wh98-p28r-vrc9
+Criticality: High
+URL: https://groups.google.com/g/ruby-security-ann/c/FkTM-_7zSNA/m/K2RiMJBlBAAJ
+Title: Possible exposure of information vulnerability in Action Pack
+Solution: update to '~> 5.2.6, >= 5.2.6.2', '~> 6.0.4, >= 6.0.4.6', '~> 6.1.4, >= 6.1.4.6', '>= 7.0.2.2'
+
+Name: actionpack
+Version: 6.1.4.4
+CVE: CVE-2024-41128
+GHSA: GHSA-x76w-6vjr-8xgj
+Criticality: Unknown
+URL: https://github.com/rails/rails/security/advisories/GHSA-x76w-6vjr-8xgj
+Title: Possible ReDoS vulnerability in query parameter filtering in Action Dispatch
+Solution: update to '~> 6.1.7.9', '~> 7.0.8, >= 7.0.8.5', '~> 7.1.4, >= 7.1.4.1', '>= 7.2.1.1'
+
+Name: actionpack
+Version: 6.1.4.4
+CVE: CVE-2022-22577
+GHSA: GHSA-mm33-5vfq-3mm3
+Criticality: Medium
+URL: https://groups.google.com/g/ruby-security-ann/c/NuFRKaN5swI
+Title: Possible XSS Vulnerability in Action Pack
+Solution: update to '~> 5.2.7, >= 5.2.7.1', '~> 6.0.4, >= 6.0.4.8', '~> 6.1.5, >= 6.1.5.1', '>= 7.0.2.4'
+
+Name: actionpack
+Version: 6.1.4.4
+CVE: CVE-2024-28103
+GHSA: GHSA-fwhr-88qx-h9g7
+Criticality: Medium
+URL: https://github.com/rails/rails/security/advisories/GHSA-fwhr-88qx-h9g7
+Title: Missing security headers in Action Pack on non-HTML responses
+Solution: update to '~> 6.1.7, >= 6.1.7.8', '~> 7.0.8, >= 7.0.8.4', '~> 7.1.3, >= 7.1.3.4', '>= 7.2.0.beta2'
+
+Name: actionpack
+Version: 6.1.4.4
+CVE: CVE-2023-28362
+GHSA: GHSA-4g8v-vg43-wpgf
+Criticality: Medium
+URL: https://discuss.rubyonrails.org/t/cve-2023-28362-possible-xss-via-user-supplied-values-to-redirect-to/83132
+Title: Possible XSS via User Supplied Values to redirect_to
+Solution: update to '~> 6.1.7.4', '>= 7.0.5.1'
+
+Name: actionpack
+Version: 6.1.4.4
+CVE: CVE-2023-22795
+GHSA: GHSA-8xww-x3g3-6jcv
+Criticality: Unknown
+URL: https://github.com/rails/rails/releases/tag/v7.0.4.1
+Title: ReDoS based DoS vulnerability in Action Dispatch
+Solution: update to '~> 5.2.8', '~> 6.1.7, >= 6.1.7.1', '>= 7.0.4.1'
+
+Name: actiontext
+Version: 6.1.4.4
+CVE: CVE-2024-47888
+GHSA: GHSA-wwhv-wxv9-rpgw
+Criticality: Unknown
+URL: https://github.com/rails/rails/security/advisories/GHSA-wwhv-wxv9-rpgw
+Title: Possible ReDoS vulnerability in plain_text_for_blockquote_node in Action Text
+Solution: update to '~> 6.1.7.9', '~> 7.0.8, >= 7.0.8.5', '~> 7.1.4, >= 7.1.4.1', '>= 7.2.1.1'
+
+Name: actionview
+Version: 6.1.4.4
+CVE: CVE-2022-27777
+GHSA: GHSA-ch3h-j2vf-95pv
+Criticality: Medium
+URL: https://groups.google.com/g/ruby-security-ann/c/9wJPEDv-iRw
+Title: Possible XSS Vulnerability in Action View tag helpers
+Solution: update to '~> 5.2.7, >= 5.2.7.1', '~> 6.0.4, >= 6.0.4.8', '~> 6.1.5, >= 6.1.5.1', '>= 7.0.2.4'
+
+Name: actionview
+Version: 6.1.4.4
+CVE: CVE-2023-23913
+GHSA: GHSA-xp5h-f8jf-rc8q
+Criticality: High
+URL: https://discuss.rubyonrails.org/t/cve-2023-23913-dom-based-cross-site-scripting-in-rails-ujs-for-contenteditable-html-elements/82468
+Title: DOM Based Cross-site Scripting in rails-ujs for contenteditable HTML Elements
+Solution: update to '~> 6.1.7.3', '>= 7.0.4.3'
+
+Name: activerecord
+Version: 6.1.4.4
+CVE: CVE-2025-55193
+GHSA: GHSA-76r7-hhxj-r776
+Criticality: Unknown
+URL: https://github.com/rails/rails/security/advisories/GHSA-76r7-hhxj-r776
+Title: Active Record logging vulnerable to ANSI escape injection
+Solution: update to '~> 7.1.5, >= 7.1.5.2', '~> 7.2.2, >= 7.2.2.2', '>= 8.0.2.1'
+
+Name: activerecord
+Version: 6.1.4.4
+CVE: CVE-2023-22794
+GHSA: GHSA-hq7p-j377-6v63
+Criticality: High
+URL: https://github.com/rails/rails/releases/tag/v7.0.4.1
+Title: SQL Injection Vulnerability via ActiveRecord comments
+Solution: update to '~> 6.0.6, >= 6.0.6.1', '~> 6.1.7, >= 6.1.7.1', '>= 7.0.4.1'
+
+Name: activerecord
+Version: 6.1.4.4
+CVE: CVE-2022-32224
+GHSA: GHSA-3hhc-qp5v-9p2j
+Criticality: Critical
+URL: https://groups.google.com/g/rubyonrails-security/c/MmFO3LYQE8U
+Title: Possible RCE escalation bug with Serialized Columns in Active Record
+Solution: update to '~> 5.2.8, >= 5.2.8.1', '~> 6.0.5, >= 6.0.5.1', '~> 6.1.6, >= 6.1.6.1', '>= 7.0.3.1'
+
+Name: activerecord
+Version: 6.1.4.4
+CVE: CVE-2022-44566
+GHSA: GHSA-579w-22j4-4749
+Criticality: High
+URL: https://github.com/rails/rails/releases/tag/v7.0.4.1
+Title: Denial of Service Vulnerability in ActiveRecord’s PostgreSQL adapter
+Solution: update to '~> 5.2.8', '~> 6.1.7, >= 6.1.7.1', '>= 7.0.4.1'
+
+Name: activestorage
+Version: 6.1.4.4
+CVE: CVE-2024-26144
+GHSA: GHSA-8h22-8cf7-hq6g
+Criticality: Medium
+URL: https://discuss.rubyonrails.org/t/possible-sensitive-session-information-leak-in-active-storage/84945
+Title: Possible Sensitive Session Information Leak in Active Storage
+Solution: update to '~> 6.1.7, >= 6.1.7.7', '>= 7.0.8.1'
+
+Name: activestorage
+Version: 6.1.4.4
+CVE: CVE-2025-24293
+GHSA: GHSA-r4mg-4433-c7g3
+Criticality: Unknown
+URL: https://github.com/rails/rails/security/advisories/GHSA-r4mg-4433-c7g3
+Title: Active Storage allowed transformation methods that were potentially unsafe
+Solution: update to '~> 7.1.5, >= 7.1.5.2', '~> 7.2.2, >= 7.2.2.2', '>= 8.0.2.1'
+
+Name: activestorage
+Version: 6.1.4.4
+CVE: CVE-2022-21831
+GHSA: GHSA-w749-p3v6-hccq
+Criticality: Critical
+URL: https://groups.google.com/g/rubyonrails-security/c/n-p-W1yxatI
+Title: Possible code injection vulnerability in Rails / Active Storage
+Solution: update to '~> 5.2.6, >= 5.2.6.3', '~> 6.0.4, >= 6.0.4.7', '~> 6.1.4, >= 6.1.4.7', '>= 7.0.2.3'
+
+Name: activesupport
+Version: 6.1.4.4
+CVE: CVE-2023-38037
+GHSA: GHSA-cr5q-6q9f-rq6q
+Criticality: Medium
+URL: https://github.com/rails/rails/releases/tag/v7.0.7.1
+Title: Possible File Disclosure of Locally Encrypted Files
+Solution: update to '~> 6.1.7, >= 6.1.7.5', '>= 7.0.7.1'
+
+Name: activesupport
+Version: 6.1.4.4
+CVE: CVE-2023-22796
+GHSA: GHSA-j6gc-792m-qgm2
+Criticality: Unknown
+URL: https://github.com/rails/rails/releases/tag/v7.0.4.1
+Title: ReDoS based DoS vulnerability in Active Support’s underscore
+Solution: update to '~> 5.2.8', '~> 6.1.7, >= 6.1.7.1', '>= 7.0.4.1'
+
+Name: activesupport
+Version: 6.1.4.4
+CVE: CVE-2023-28120
+GHSA: GHSA-pj73-v5mw-pm9j
+Criticality: Medium
+URL: https://discuss.rubyonrails.org/t/cve-2023-28120-possible-xss-security-vulnerability-in-safebuffer-bytesplice/82469
+Title: Possible XSS Security Vulnerability in SafeBuffer#bytesplice
+Solution: update to '~> 6.1.7, >= 6.1.7.3', '>= 7.0.4.3'
+
+Name: globalid
+Version: 1.0.0
+CVE: CVE-2023-22799
+GHSA: GHSA-23c2-gwp5-pxw9
+Criticality: Unknown
+URL: https://github.com/rails/globalid/releases/tag/v1.0.1
+Title: ReDoS based DoS vulnerability in GlobalID
+Solution: update to '>= 1.0.1'
+
+Name: loofah
+Version: 2.13.0
+CVE: CVE-2022-23515
+GHSA: GHSA-228g-948r-83gx
+Criticality: Medium
+URL: https://github.com/flavorjones/loofah/security/advisories/GHSA-228g-948r-83gx
+Title: Improper neutralization of data URIs may allow XSS in Loofah
+Solution: update to '>= 2.19.1'
+
+Name: loofah
+Version: 2.13.0
+CVE: CVE-2022-23516
+GHSA: GHSA-3x8r-x6xp-q4vm
+Criticality: High
+URL: https://github.com/flavorjones/loofah/security/advisories/GHSA-3x8r-x6xp-q4vm
+Title: Uncontrolled Recursion in Loofah
+Solution: update to '>= 2.19.1'
+
+Name: loofah
+Version: 2.13.0
+CVE: CVE-2022-23514
+GHSA: GHSA-486f-hjj9-9vhh
+Criticality: High
+URL: https://github.com/flavorjones/loofah/security/advisories/GHSA-486f-hjj9-9vhh
+Title: Inefficient Regular Expression Complexity in Loofah
+Solution: update to '>= 2.19.1'
+
+Name: nokogiri
+Version: 1.13.1
+CVE: CVE-2021-30560
+GHSA: GHSA-fq42-c5rg-92c2
+Criticality: High
+URL: https://github.com/sparklemotion/nokogiri/security/advisories/GHSA-fq42-c5rg-92c2
+Title: Update packaged libxml2 (2.9.12 → 2.9.13) and libxslt (1.1.34 → 1.1.35)
+Solution: update to '>= 1.13.2'
+
+Name: nokogiri
+Version: 1.13.1
+CVE: CVE-2018-25032
+GHSA: GHSA-v6gp-9mmm-c6p5
+Criticality: High
+URL: https://github.com/sparklemotion/nokogiri/security/advisories/GHSA-v6gp-9mmm-c6p5
+Title: Out-of-bounds Write in zlib affects Nokogiri
+Solution: update to '>= 1.13.4'
+
+Name: nokogiri
+Version: 1.13.1
+GHSA: GHSA-xc9x-jj77-9p9j
+Criticality: Unknown
+URL: https://github.com/sparklemotion/nokogiri/security/advisories/GHSA-xc9x-jj77-9p9j
+Title: Use-after-free in libxml2 via Nokogiri::XML::Reader
+Solution: update to '~> 1.15.6', '>= 1.16.2'
+
+Name: nokogiri
+Version: 1.13.1
+CVE: CVE-2022-24839
+GHSA: GHSA-gx8x-g87m-h5q6
+Criticality: High
+URL: https://github.com/sparklemotion/nekohtml/security/advisories/GHSA-9849-p7jc-9rmv
+Title: Denial of Service (DoS) in Nokogiri on JRuby
+Solution: update to '>= 1.13.4'
+
+Name: nokogiri
+Version: 1.13.1
+GHSA: GHSA-5w6v-399v-w3cc
+Criticality: Unknown
+URL: https://github.com/sparklemotion/nokogiri/security/advisories/GHSA-5w6v-399v-w3cc
+Title: Nokogiri updates packaged libxml2 to v2.13.8 to resolve CVE-2025-32414 and CVE-2025-32415
+Solution: update to '>= 1.18.8'
+
+Name: nokogiri
+Version: 1.13.1
+CVE: CVE-2022-29181
+GHSA: GHSA-xh29-r2w5-wx8m
+Criticality: High
+URL: https://github.com/sparklemotion/nokogiri/security/advisories/GHSA-xh29-r2w5-wx8m
+Title: Improper Handling of Unexpected Data Type in Nokogiri
+Solution: update to '>= 1.13.6'
+
+Name: nokogiri
+Version: 1.13.1
+GHSA: GHSA-2qc6-mcvw-92cw
+Criticality: Unknown
+URL: https://github.com/sparklemotion/nokogiri/security/advisories/GHSA-2qc6-mcvw-92cw
+Title: Update bundled libxml2 to v2.10.3 to resolve multiple CVEs
+Solution: update to '>= 1.13.9'
+
+Name: nokogiri
+Version: 1.13.1
+GHSA: GHSA-cgx6-hpwq-fhv5
+Criticality: High
+URL: https://github.com/sparklemotion/nokogiri/security/advisories/GHSA-cgx6-hpwq-fhv5
+Title: Integer Overflow or Wraparound in libxml2 affects Nokogiri
+Solution: update to '>= 1.13.5'
+
+Name: nokogiri
+Version: 1.13.1
+GHSA: GHSA-vvfq-8hwr-qm4m
+Criticality: Unknown
+URL: https://github.com/sparklemotion/nokogiri/security/advisories/GHSA-vvfq-8hwr-qm4m
+Title: Nokogiri updates packaged libxml2 to 2.13.6 to resolve CVE-2025-24928 and CVE-2024-56171
+Solution: update to '>= 1.18.3'
+
+Name: nokogiri
+Version: 1.13.1
+GHSA: GHSA-r95h-9x8f-r3f7
+Criticality: Unknown
+URL: https://github.com/sparklemotion/nokogiri/security/advisories/GHSA-r95h-9x8f-r3f7
+Title: Nokogiri updates packaged libxml2 to v2.12.7 to resolve CVE-2024-34459
+Solution: update to '>= 1.16.5'
+
+Name: nokogiri
+Version: 1.13.1
+CVE: CVE-2022-24836
+GHSA: GHSA-crjr-9rc5-ghw8
+Criticality: High
+URL: https://github.com/sparklemotion/nokogiri/security/advisories/GHSA-crjr-9rc5-ghw8
+Title: Inefficient Regular Expression Complexity in Nokogiri
+Solution: update to '>= 1.13.4'
+
+Name: nokogiri
+Version: 1.13.1
+CVE: CVE-2022-23437
+GHSA: GHSA-xxx9-3xcr-gjj3
+Criticality: Medium
+URL: https://github.com/sparklemotion/nokogiri/security/advisories/GHSA-xxx9-3xcr-gjj3
+Title: XML Injection in Xerces Java affects Nokogiri
+Solution: update to '>= 1.13.4'
+
+Name: nokogiri
+Version: 1.13.1
+GHSA: GHSA-353f-x4gh-cqq8
+Criticality: Unknown
+URL: https://github.com/sparklemotion/nokogiri/security/advisories/GHSA-353f-x4gh-cqq8
+Title: Nokogiri patches vendored libxml2 to resolve multiple CVEs
+Solution: update to '>= 1.18.9'
+
+Name: nokogiri
+Version: 1.13.1
+GHSA: GHSA-pxvg-2qj5-37jq
+Criticality: Unknown
+URL: https://github.com/sparklemotion/nokogiri/security/advisories/GHSA-pxvg-2qj5-37jq
+Title: Update packaged libxml2 to v2.10.4 to resolve multiple CVEs
+Solution: update to '>= 1.14.3'
+
+Name: nokogiri
+Version: 1.13.1
+GHSA: GHSA-mrxw-mxhj-p664
+Criticality: High
+URL: https://github.com/sparklemotion/nokogiri/security/advisories/GHSA-mrxw-mxhj-p664
+Title: Nokogiri updates packaged libxslt to v1.1.43 to resolve multiple CVEs
+Solution: update to '>= 1.18.4'
+
+Name: puma
+Version: 5.5.2
+CVE: CVE-2024-21647
+GHSA: GHSA-c2f4-cvqm-65w2
+Criticality: Medium
+URL: https://github.com/puma/puma/security/advisories/GHSA-c2f4-cvqm-65w2
+Title: Puma HTTP Request/Response Smuggling vulnerability
+Solution: update to '~> 5.6.8', '>= 6.4.2'
+
+Name: puma
+Version: 5.5.2
+CVE: CVE-2022-24790
+GHSA: GHSA-h99w-9q5r-gjq9
+Criticality: Critical
+URL: https://github.com/puma/puma/security/advisories/GHSA-h99w-9q5r-gjq9
+Title: HTTP Request Smuggling in puma
+Solution: update to '~> 4.3.12', '>= 5.6.4'
+
+Name: puma
+Version: 5.5.2
+CVE: CVE-2022-23634
+GHSA: GHSA-rmj8-8hhh-gv5h
+Criticality: High
+URL: https://github.com/puma/puma/security/advisories/GHSA-rmj8-8hhh-gv5h
+Title: Information Exposure with Puma when used with Rails
+Solution: update to '~> 4.3.11', '>= 5.6.2'
+
+Name: puma
+Version: 5.5.2
+CVE: CVE-2023-40175
+GHSA: GHSA-68xg-gqqm-vgj8
+Criticality: Medium
+URL: https://github.com/puma/puma/security/advisories/GHSA-68xg-gqqm-vgj8
+Title: Inconsistent Interpretation of HTTP Requests ('HTTP Request/Response Smuggling') in puma
+Solution: update to '~> 5.6.7', '>= 6.3.1'
+
+Name: puma
+Version: 5.5.2
+CVE: CVE-2024-45614
+GHSA: GHSA-9hf4-67fc-4vf4
+Criticality: Medium
+URL: https://github.com/puma/puma/security/advisories/GHSA-9hf4-67fc-4vf4
+Title: Puma's header normalization allows for client to clobber proxy set headers
+Solution: update to '~> 5.6.9', '>= 6.4.3'
+
+Name: rack
+Version: 2.2.3
+CVE: CVE-2025-61770
+GHSA: GHSA-p543-xpfm-54cp
+Criticality: High
+URL: https://github.com/rack/rack/security/advisories/GHSA-p543-xpfm-54cp
+Title: Rack's unbounded multipart preamble buffering enables DoS (memory exhaustion)
+Solution: update to '~> 2.2.19', '~> 3.1.17', '>= 3.2.2'
+
+Name: rack
+Version: 2.2.3
+CVE: CVE-2022-44572
+GHSA: GHSA-rqv2-275x-2jq5
+Criticality: Unknown
+URL: https://github.com/rack/rack/releases/tag/v3.0.4.1
+Title: Denial of service via multipart parsing in Rack
+Solution: update to '~> 2.0.9, >= 2.0.9.2', '~> 2.1.4, >= 2.1.4.2', '~> 2.2.6, >= 2.2.6.1', '>= 3.0.4.1'
+
+Name: rack
+Version: 2.2.3
+CVE: CVE-2025-61772
+GHSA: GHSA-wpv5-97wm-hp9c
+Criticality: High
+URL: https://github.com/rack/rack/security/advisories/GHSA-wpv5-97wm-hp9c
+Title: Rack's multipart parser buffers unbounded per-part headers, enabling DoS (memory exhaustion)
+Solution: update to '~> 2.2.19', '~> 3.1.17', '>= 3.2.2'
+
+Name: rack
+Version: 2.2.3
+CVE: CVE-2024-26146
+GHSA: GHSA-54rr-7fvw-6x8f
+Criticality: Unknown
+URL: https://discuss.rubyonrails.org/t/possible-denial-of-service-vulnerability-in-rack-header-parsing/84942
+Title: Possible Denial of Service Vulnerability in Rack Header Parsing
+Solution: update to '~> 2.0.9, >= 2.0.9.4', '~> 2.1.4, >= 2.1.4.4', '~> 2.2.8, >= 2.2.8.1', '>= 3.0.9.1'
+
+Name: rack
+Version: 2.2.3
+CVE: CVE-2025-61771
+GHSA: GHSA-w9pc-fmgc-vxvw
+Criticality: High
+URL: https://github.com/rack/rack/security/advisories/GHSA-w9pc-fmgc-vxvw
+Title: Multipart parser buffers large non‑file fields entirely in memory, enabling DoS (memory exhaustion)
+Solution: update to '~> 2.2.19', '~> 3.1.17', '>= 3.2.2'
+
+Name: rack
+Version: 2.2.3
+CVE: CVE-2024-25126
+GHSA: GHSA-22f2-v57c-j9cx
+Criticality: Medium
+URL: https://discuss.rubyonrails.org/t/denial-of-service-vulnerability-in-rack-content-type-parsing/84941
+Title: Denial of Service Vulnerability in Rack Content-Type Parsing
+Solution: update to '~> 2.2.8, >= 2.2.8.1', '>= 3.0.9.1'
+
+Name: rack
+Version: 2.2.3
+CVE: CVE-2022-44570
+GHSA: GHSA-65f5-mfpf-vfhj
+Criticality: High
+URL: https://github.com/rack/rack/releases/tag/v3.0.4.1
+Title: Denial of service via header parsing in Rack
+Solution: update to '~> 2.0.9, >= 2.0.9.2', '~> 2.1.4, >= 2.1.4.2', '~> 2.2.6, >= 2.2.6.2', '>= 3.0.4.1'
+
+Name: rack
+Version: 2.2.3
+CVE: CVE-2022-44571
+GHSA: GHSA-93pm-5p5f-3ghx
+Criticality: Unknown
+URL: https://github.com/rack/rack/releases/tag/v3.0.4.1
+Title: Denial of Service Vulnerability in Rack Content-Disposition parsing
+Solution: update to '~> 2.0.9, >= 2.0.9.2', '~> 2.1.4, >= 2.1.4.2', '~> 2.2.6, >= 2.2.6.1', '>= 3.0.4.1'
+
+Name: rack
+Version: 2.2.3
+CVE: CVE-2025-46727
+GHSA: GHSA-gjh7-p2fx-99vx
+Criticality: High
+URL: https://github.com/rack/rack/security/advisories/GHSA-gjh7-p2fx-99vx
+Title: Rack has an Unbounded-Parameter DoS in Rack::QueryParser
+Solution: update to '~> 2.2.14', '~> 3.0.16', '>= 3.1.14'
+
+Name: rack
+Version: 2.2.3
+CVE: CVE-2025-32441
+GHSA: GHSA-vpfw-47h7-xj4g
+Criticality: Medium
+URL: https://github.com/rack/rack-session/security/advisories/GHSA-9j94-67jr-4cqj
+Title: Rack session gets restored after deletion
+Solution: update to '>= 2.2.14'
+
+Name: rack
+Version: 2.2.3
+CVE: CVE-2023-27539
+GHSA: GHSA-c6qg-cjj8-47qp
+Criticality: Unknown
+URL: https://discuss.rubyonrails.org/t/cve-2023-27539-possible-denial-of-service-vulnerability-in-racks-header-parsing/82466
+Title: Possible Denial of Service Vulnerability in Rack’s header parsing
+Solution: update to '~> 2.0, >= 2.2.6.4', '>= 3.0.6.1'
+
+Name: rack
+Version: 2.2.3
+CVE: CVE-2025-27111
+GHSA: GHSA-8cgq-6mh2-7j6v
+Criticality: Unknown
+URL: https://github.com/rack/rack/security/advisories/GHSA-8cgq-6mh2-7j6v
+Title: Escape Sequence Injection vulnerability in Rack lead to Possible Log Injection
+Solution: update to '~> 2.2.12', '~> 3.0.13', '>= 3.1.11'
+
+Name: rack
+Version: 2.2.3
+CVE: CVE-2025-61919
+GHSA: GHSA-6xw4-3v39-52mm
+Criticality: High
+URL: https://github.com/rack/rack/security/advisories/GHSA-6xw4-3v39-52mm
+Title: Rack is vulnerable to a memory-exhaustion DoS through unbounded URL-encoded body parsing
+Solution: update to '~> 2.2.20', '~> 3.1.18', '>= 3.2.3'
+
+Name: rack
+Version: 2.2.3
+CVE: CVE-2025-61780
+GHSA: GHSA-r657-rxjc-j557
+Criticality: Medium
+URL: https://github.com/rack/rack/security/advisories/GHSA-r657-rxjc-j557
+Title: Rack has a Possible Information Disclosure Vulnerability
+Solution: update to '~> 2.2.20', '~> 3.1.18', '>= 3.2.3'
+
+Name: rack
+Version: 2.2.3
+CVE: CVE-2022-30122
+GHSA: GHSA-hxqx-xwvh-44m2
+Criticality: High
+URL: https://groups.google.com/g/ruby-security-ann/c/L2Axto442qk
+Title: Denial of Service Vulnerability in Rack Multipart Parsing
+Solution: update to '~> 2.0.9, >= 2.0.9.1', '~> 2.1.4, >= 2.1.4.1', '>= 2.2.3.1'
+
+Name: rack
+Version: 2.2.3
+CVE: CVE-2023-27530
+GHSA: GHSA-3h57-hmj3-gj3p
+Criticality: High
+URL: https://discuss.rubyonrails.org/t/cve-2023-27530-possible-dos-vulnerability-in-multipart-mime-parsing/82388
+Title: Possible DoS Vulnerability in Multipart MIME parsing
+Solution: update to '~> 2.0.9, >= 2.0.9.3', '~> 2.1.4, >= 2.1.4.3', '~> 2.2.6, >= 2.2.6.3', '>= 3.0.4.2'
+
+Name: rack
+Version: 2.2.3
+CVE: CVE-2025-25184
+GHSA: GHSA-7g2v-jj9q-g3rg
+Criticality: Medium
+URL: https://github.com/rack/rack/security/advisories/GHSA-7g2v-jj9q-g3rg
+Title: Possible Log Injection in Rack::CommonLogger
+Solution: update to '~> 2.2.11', '~> 3.0.12', '>= 3.1.10'
+
+Name: rack
+Version: 2.2.3
+CVE: CVE-2022-30123
+GHSA: GHSA-wq4h-7r42-5hrr
+Criticality: Critical
+URL: https://groups.google.com/g/ruby-security-ann/c/LWB10kWzag8
+Title: Possible shell escape sequence injection vulnerability in Rack
+Solution: update to '~> 2.0.9, >= 2.0.9.1', '~> 2.1.4, >= 2.1.4.1', '>= 2.2.3.1'
+
+Name: rack
+Version: 2.2.3
+CVE: CVE-2024-26141
+GHSA: GHSA-xj5v-6v4g-jfw6
+Criticality: Unknown
+URL: https://discuss.rubyonrails.org/t/possible-dos-vulnerability-with-range-header-in-rack/84944
+Title: Possible DoS Vulnerability with Range Header in Rack
+Solution: update to '~> 2.2.8, >= 2.2.8.1', '>= 3.0.9.1'
+
+Name: rack
+Version: 2.2.3
+CVE: CVE-2025-59830
+GHSA: GHSA-625h-95r8-8xpm
+Criticality: High
+URL: https://github.com/rack/rack/security/advisories/GHSA-625h-95r8-8xpm
+Title: Rack has an unsafe default in Rack::QueryParser allows params_limit bypass via semicolon-separated parameters
+Solution: update to '>= 2.2.18'
+
+Name: rack
+Version: 2.2.3
+CVE: CVE-2025-27610
+GHSA: GHSA-7wqh-767x-r66v
+Criticality: High
+URL: https://github.com/rack/rack/security/advisories/GHSA-7wqh-767x-r66v
+Title: Local File Inclusion in Rack::Static
+Solution: update to '~> 2.2.13', '~> 3.0.14', '>= 3.1.12'
+
+Name: rails-html-sanitizer
+Version: 1.4.2
+CVE: CVE-2022-23518
+GHSA: GHSA-mcvf-2q2m-x72m
+Criticality: Medium
+URL: https://github.com/rails/rails-html-sanitizer/security/advisories/GHSA-mcvf-2q2m-x72m
+Title: Improper neutralization of data URIs may allow XSS in rails-html-sanitizer
+Solution: update to '>= 1.4.4'
+
+Name: rails-html-sanitizer
+Version: 1.4.2
+CVE: CVE-2022-23517
+GHSA: GHSA-5x79-w82f-gw8w
+Criticality: High
+URL: https://github.com/rails/rails-html-sanitizer/security/advisories/GHSA-5x79-w82f-gw8w
+Title: Inefficient Regular Expression Complexity in rails-html-sanitizer
+Solution: update to '>= 1.4.4'
+
+Name: rails-html-sanitizer
+Version: 1.4.2
+CVE: CVE-2022-23520
+GHSA: GHSA-rrfc-7g8p-99q8
+Criticality: Medium
+URL: https://github.com/rails/rails-html-sanitizer/security/advisories/GHSA-rrfc-7g8p-99q8
+Title: Possible XSS vulnerability with certain configurations of rails-html-sanitizer
+Solution: update to '>= 1.4.4'
+
+Name: rails-html-sanitizer
+Version: 1.4.2
+CVE: CVE-2022-32209
+GHSA: GHSA-pg8v-g4xq-hww9
+Criticality: Medium
+URL: https://groups.google.com/g/rubyonrails-security/c/ce9PhUANQ6s
+Title: Possible XSS vulnerability with certain configurations of Rails::Html::Sanitizer
+Solution: update to '>= 1.4.3'
+
+Name: rails-html-sanitizer
+Version: 1.4.2
+CVE: CVE-2022-23519
+GHSA: GHSA-9h9g-93gc-623h
+Criticality: Medium
+URL: https://github.com/rails/rails-html-sanitizer/security/advisories/GHSA-9h9g-93gc-623h
+Title: Possible XSS vulnerability with certain configurations of rails-html-sanitizer
+Solution: update to '>= 1.4.4'
+
+Name: rexml
+Version: 3.2.5
+CVE: CVE-2024-43398
+GHSA: GHSA-vmwr-mc7x-5vc3
+Criticality: Medium
+URL: https://github.com/ruby/rexml/security/advisories/GHSA-vmwr-mc7x-5vc3
+Title: REXML denial of service vulnerability
+Solution: update to '>= 3.3.6'
+
+Name: rexml
+Version: 3.2.5
+CVE: CVE-2024-35176
+GHSA: GHSA-vg3r-rm7w-2xgh
+Criticality: Medium
+URL: https://github.com/ruby/rexml/security/advisories/GHSA-vg3r-rm7w-2xgh
+Title: REXML contains a denial of service vulnerability
+Solution: update to '>= 3.2.7'
+
+Name: rexml
+Version: 3.2.5
+CVE: CVE-2024-41123
+GHSA: GHSA-r55c-59qm-vjw6
+Criticality: Medium
+URL: https://www.ruby-lang.org/en/news/2024/08/01/dos-rexml-cve-2024-41123
+Title: DoS vulnerabilities in REXML
+Solution: update to '>= 3.3.3'
+
+Name: rexml
+Version: 3.2.5
+CVE: CVE-2024-39908
+GHSA: GHSA-4xqq-m2hx-25v8
+Criticality: Medium
+URL: https://github.com/ruby/rexml/security/advisories/GHSA-4xqq-m2hx-25v8
+Title: DoS in REXML
+Solution: update to '>= 3.3.2'
+
+Name: rexml
+Version: 3.2.5
+CVE: CVE-2024-49761
+GHSA: GHSA-2rxp-v6pw-ch6m
+Criticality: High
+URL: https://github.com/ruby/rexml/security/advisories/GHSA-2rxp-v6pw-ch6m
+Title: REXML ReDoS vulnerability
+Solution: update to '>= 3.3.9'
+
+Name: rexml
+Version: 3.2.5
+CVE: CVE-2024-41946
+GHSA: GHSA-5866-49gr-22v4
+Criticality: Medium
+URL: https://www.ruby-lang.org/en/news/2024/08/01/dos-rexml-cve-2024-41946
+Title: DoS vulnerabilities in REXML
+Solution: update to '>= 3.3.3'
+
+Name: thor
+Version: 1.2.1
+CVE: CVE-2025-54314
+GHSA: GHSA-mqcp-p2hv-vw6x
+Criticality: Low
+URL: https://github.com/advisories/GHSA-mqcp-p2hv-vw6x
+Title: Thor can construct an unsafe shell command from library input.
+Solution: update to '>= 1.4.0'
+
+Vulnerabilities found!
