@@ -9,9 +9,12 @@ module Api
 
       # rubocop:disable Metrics/AbcSize
       def create # rubocop:disable Metrics/MethodLength
+        # Only master and editor users can add items to the collection.
         if current_api_user[:role] == 'master' || current_api_user[:role] == 'editor'
           @item = Item.new(allowed_params_create)
 
+          # These fields are controlled by the API so the client cannot
+          # impersonate a cataloger or choose the initial workflow status.
           @item.status = 'pending'
           @item.register_number = "#{Time.now}-#{allowed_params_create[:name]}"
           @item.cataloged_by = current_api_user[:name]
@@ -48,6 +51,8 @@ module Api
       end
 
       def index
+        # Sorting and pagination are shared with the users endpoint through
+        # the Paginable and Sortable concerns.
         @items = Item.sorted(params[:sort], params[:dir])
                      .page(current_page)
                      .per(per_page)
@@ -64,6 +69,8 @@ module Api
       end
 
       def allowed_params_create # rubocop:disable  Metrics/MethodLength
+        # Keep the permitted fields explicit: nested item payloads are
+        # rejected unless they are part of the documented contract.
         params.require(:item).permit(
           :name,
           :id_photo,

@@ -1,125 +1,72 @@
-# API Museu da Computação da UFRJ  | MCU-CORE
+# MCU Core — API do Museu da Computação da UFRJ
 
-This project was generated with [Rails](https://guides.rubyonrails.org/v6.1/). Our main go is the create ond REST API to control the museum data.
+API REST responsável pelo cadastro e pela consulta dos itens do acervo, além da autenticação e do gerenciamento de usuários do painel administrativo.
 
+## Stack observada
 
-We use:
- - Rails: 6.1.4.4
- - Ruby: 2.7.5
+As versões abaixo descrevem o checkout atual. Elas são referência para desenvolvimento e documentação; esta tarefa não atualiza dependências.
 
-Table of contents
-=================
+- Ruby 2.7.5 no `Gemfile` e na imagem Docker
+- Rails 6.1.4.4
+- PostgreSQL 12.1 no Docker Compose
+- Redis para o Action Cable
+- RSpec para testes
+- RuboCop para análise estática
 
-  * [Install](#install)
-  * [Usage](#usage)
-  * [Rails Console](#rails-console)
-  * [Tests](#tests)
-  * [Linter](#linter)
-  * [Troubleshooting](#troubleshooting)
-  * [Git Guideline](#git-guideline)
+## Executar localmente
 
-## Install
+É necessário ter Docker e Docker Compose disponíveis.
 
-+ Clone the repo and cd into it
-
-``` bash
-$ docker compose up
-```
-
-## Usage
+Na raiz deste repositório:
 
 ```bash
-$ docker-compose up
+docker compose up --build
 ```
 
-The application will become available at the URL:
+O serviço ficará disponível em `http://localhost:3000`.
 
-```
-http://localhost:3000/
-```
+O comando de inicialização do Compose cria o banco, executa as migrações e carrega os dados de desenvolvimento. Não use os dados do seed em ambientes compartilhados ou de produção.
 
-1 - To install new gems add on Gemfile and then run `docker-compose build`
-
-2- The user Master will be found on `db/seed.rb`
-## Rails Console
-
-To access rails console run.
+## Comandos úteis
 
 ```bash
-docker-compose run --rm app sh
+# Validar a configuração do Compose sem iniciar os serviços
+docker compose config
+
+# Abrir um shell no container da aplicação
+docker compose run --rm app sh
+
+# Executar todos os testes
+docker compose run --rm app bundle exec rspec
+
+# Executar um arquivo de teste específico
+docker compose run --rm app bundle exec rspec spec/requests/api/v1/items_spec.rb
+
+# Executar o linter
+docker compose run --rm app bundle exec rubocop
 ```
+
+Para abrir o console Rails dentro do container:
 
 ```bash
-rails c
+docker compose run --rm app bundle exec rails console
 ```
 
-More indo on [Rails Guide Command line](https://guides.rubyonrails.org/command_line.html) and [pry doc](http://pry.github.io)
+## Manual da API
 
+As rotas, os cabeçalhos de autenticação, os parâmetros de paginação e o formato esperado para itens estão documentados em [`docs/api.md`](docs/api.md).
 
-## Tests
+As rotas usam o namespace `/api`. O constraint de versão atual seleciona a implementação v1 por padrão; o cabeçalho `Accept: application/vnd.mcu.v1` também identifica explicitamente a versão.
 
-It's never too early to begin running unit tests. Tests are run using [RSpec](https://github.com/rspec/rspec-rails) testing framework and lives in the /spec folder. To run the tests:
+## Alterar gems ou a imagem
 
-```
-docker-compose run --rm app rake
-```
-or into sh
+Alterações de dependências devem ser feitas em uma tarefa própria. Quando forem autorizadas, atualize o `Gemfile`, regenere o lockfile de forma intencional e registre a matriz de versões e os testes executados. Não edite `Gemfile.lock` como parte de uma alteração apenas documental.
 
-```
-rake
-```
+## Convenções de Git
 
-You too can run just one spec file into sh
+Branches e mensagens de commit devem usar inglês:
 
-```
-rspec spec/{file_path}
+- Branches: `feat/branch-name`, `fix/branch-name`, `docs/branch-name`
+- Commits: `feat(context): message`, `fix(context): message`, `docs(context): message`, `tests(context): message`
 
-```
-
-## Linter
-
-This project uses the [rubocop gem](https://guides.rubyonrails.org/testing.html) for linter, that config you can find on `.rubocop.yml`. Access the docker console and run by:
-
-```bash
-bundle exec rubocop
-```
-
-> Use `-a` to autofix safe mode  and `-A` hardmode
-
-## Troubleshooting
-
-#### Access Forbidden  for edit files create by rails c
-
-On ubuntu:
-
-inside de project folder run:
-
-```bash
-sudo chown your-user:your-user -R ./
-```
-
-#### rails server error `initialize': getaddrinfo: Name or service not known (SocketError)
-
-On Ubuntu:
-
-On `/etc/host` add `127.0.0.1  localhost`
-
-## Git Guideline
-Create your branch's and commits using english language and fallowing this guideline.
-
-#### Branches
-- Feature:  `feat/branch-name`
-- Hotfix: `hotfix/branch-name`
-- POC: `poc/branch-name`
-
-#### Commits prefix
-- Chore: `chore(context): message`
-- Feat: `feat(context): message`
-- Fix: `fix(context): message`
-- Refactor: `refactor(context): message`
-- Tests: `tests(context): message`
-- Docs: `docs(context): message`
-
-#### Open MR's
-
-When open your mr on github use the MR template.
+Antes de abrir um pull request, execute os testes e o RuboCop e descreva qualquer verificação que não tenha sido possível executar.
