@@ -8,5 +8,11 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-master_user = User.create(name: 'MCU Master', email: 'master@mcu.com', password: '123456789',password_confirmation: '123456789', role: 'master')
-master_user.confirm
+master_user = User.find_or_create_by!(email: 'master@mcu.com') do |user|
+  user.name = 'MCU Master'
+  user.password = '123456789'
+  user.password_confirmation = '123456789'
+  user.role = 'master'
+end
+
+master_user.confirm unless master_user.confirmed?
